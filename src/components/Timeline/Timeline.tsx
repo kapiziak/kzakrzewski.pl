@@ -63,7 +63,7 @@ const Timeline: FC = () => (
         { text: "PHP", color: "blue" },
         { text: "MDBootstrap", color: "teal" },
         { text: "CodeIgniter 2", color: "orange" },
-        { text: "Steam API", color: "blackAlpha" },
+        { text: "Steam API", color: "facebook" },
         { text: "MySQL", color: "orange" },
       ]}
       buttons={[
