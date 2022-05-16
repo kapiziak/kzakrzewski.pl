@@ -1,15 +1,5 @@
 import {
-  Box,
-  Grid,
-  GridItem,
-  HStack,
-  SimpleGrid,
-  Stack,
-  Image,
-  Badge,
-  Heading,
   VStack,
-  Text,
 } from "@chakra-ui/react";
 import React, { FC } from "react";
 import TimelineRow from "./TimelineRow";

@@ -6,14 +6,11 @@ import {
   Text,
   Image,
   Flex,
-  SimpleGrid,
   Button,
-  useColorMode,
 } from "@chakra-ui/react";
 import React, { FC } from "react";
 import EmojiSpinner from "../../components/EmojiSpinner/EmojiSpinner";
 import itsme from "../../assets/img/itsme.png";
-import styled from "@emotion/styled";
 import BoldLink from "../../components/BoldLink/BoldLink";
 
 const Home: FC = () => {

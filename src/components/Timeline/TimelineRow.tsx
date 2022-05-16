@@ -6,8 +6,6 @@ import {
   Badge,
   Heading,
   Text,
-  ThemingProps,
-  Flex,
   Button,
   Link,
 } from "@chakra-ui/react";

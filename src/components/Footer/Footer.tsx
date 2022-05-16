@@ -1,9 +1,6 @@
-import { EmailIcon } from "@chakra-ui/icons";
-import { Box, Container, Flex, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import { Container, Flex, Text } from "@chakra-ui/react";
 import React, { FC } from "react";
 import SocialsStack from "../Header/SocialsStack";
-import { GithubIcon } from "../Icons/GithubIcon";
-import { LinkedinIcon } from "../Icons/LinkedinIcon";
 
 const Footer: FC = () => {
   return (
