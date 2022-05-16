@@ -1,0 +1,16 @@
+.hoverableHeading {
+  transition: all 0.2s ease-in-out;
+  padding: 1px 5px;
+
+  &:hover {
+    h1 {
+      background-size:1px 200px; 
+    }
+  }
+
+  svg {
+    path {
+      fill: tomato;
+    }
+  }
+}

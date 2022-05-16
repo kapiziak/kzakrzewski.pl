@@ -1,0 +1,1 @@
+.timelineRow{position:relative}.timelineRowYearLabel{display:none;position:absolute;font-size:4rem;width:auto;opacity:.2;transform:rotateZ(-90deg);text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;color:#fff}@media screen and (min-width:62em){.timelineRowYearLabel{display:block;left:39.5%;top:35%}}.inverted{left:46.5%;top:35%;transform:rotateZ(90deg)}

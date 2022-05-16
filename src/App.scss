@@ -1,0 +1,15 @@
+.page-wrapper {
+    animation: container-appear 0.33s ease-out forwards;
+}
+
+@keyframes container-appear {
+    from {
+      opacity: 0;
+      transform: translateY(0.4rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
