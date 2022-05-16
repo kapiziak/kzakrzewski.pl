@@ -13,8 +13,21 @@ import EmojiSpinner from "../../components/EmojiSpinner/EmojiSpinner";
 import itsme from "../../assets/img/itsme.png";
 import BoldLink from "../../components/BoldLink/BoldLink";
 
-const Home: FC = () => {
+const ImageElement:FC = () => (
+  <Image
+    display="flex"
+    mt={{ sm: 5, md: 0 }}
+    ml="auto"
+    mr="auto"
+    borderRadius="5px"
+    src={itsme}
+    alt="Kacper Zakrzewski - to ja! :)"
+    maxWidth="50%"
+    shadow="xl"
+  />
+);
 
+const Home: FC = () => {
   return (
     <div className="page-wrapper">
       <Grid textAlign="center" p={3} mt={20}>
@@ -38,37 +51,37 @@ const Home: FC = () => {
               Jestem osobą otwartą na współpracę oraz na samoudoskonalanie
               swoich umiejętności.
             </Text>
+            <Box mt={10} display={["block", "block", "none", "none"]}>
+              <ImageElement />
+            </Box>
+            <Box mt={10}>
+              <Heading as="h2">Stack</Heading>
+              <Flex
+                mt={5}
+                gap={3}
+                wrap="wrap"
+                justifyContent={["center", "center", "start", "start"]}
+              >
+                <Button colorScheme="orange">WordPress</Button>
+                <Button colorScheme="cyan">PHP</Button>
+                <Button colorScheme="yellow">JavaScript</Button>
+                <Button colorScheme="blue">TypeScript</Button>
+                <Button>Node.js</Button>
+                <Button colorScheme="facebook">React.js</Button>
+              </Flex>
+            </Box>
           </GridItem>
-          <GridItem>
-            <Image
-              display="flex"
-              mt={{ sm: 5, md: 0 }}
-              ml="auto"
-              mr="auto"
-              borderRadius="5px"
-              src={itsme}
-              alt="Dan Abramov"
-              maxWidth="50%"
-              shadow="xl"
-            />
+          <GridItem display={["none", "none", "block", "block"]}>
+            <ImageElement />
           </GridItem>
         </Grid>
       </Box>
-      <Box mt={20}>
-        <Heading as="h2">Stack</Heading>
-        <Flex mt={5} gap={3} wrap="wrap" justifyContent={["center", "center", "start", "start"]}>
-          <Button colorScheme="orange">WordPress</Button>
-          <Button colorScheme="cyan">PHP</Button>
-          <Button colorScheme="yellow">JavaScript</Button>
-          <Button colorScheme="blue">TypeScript</Button>
-          <Button>Node.js</Button>
-          <Button colorScheme="facebook">React.js</Button>
-        </Flex>
-      </Box>
+
       <Box mt={20}>
         <Heading as="h2">Projekty</Heading>
         <Text mt={2}>
-          O moich projektach dowiesz się więcej <BoldLink to="/projects" text="tutaj" />.
+          O moich projektach dowiesz się więcej{" "}
+          <BoldLink to="/projects" text="tutaj" />.
         </Text>
       </Box>
     </div>
