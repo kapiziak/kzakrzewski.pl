@@ -18,13 +18,13 @@ const Timeline: FC = () => (
       text={`Cyfrowy system zarządzania dostępem do kluczy, który zastępuje przestarzałe systemy papierowe, jak te używane na Politechnice Białostockiej. System automatyzuje procesy i redukuje dokumentację papierową. `}
       image={imgSudo}
       badges={[
-        { text: "Next.js", color: "blackAlpha" },
-        { text: "React.js", color: "facebook" },
+        { text: "Next.js", color: "gray" },
+        { text: "React.js", color: "cyan" },
         { text: "TypeScript", color: "blue" },
         { text: "Express.js", color: "red" },
         { text: "Prisma ORM", color: "gray" },
         { text: "Capacitor.js", color: "yellow" },
-        { text: "Electron", color: "cyan" },
+        { text: "Electron", color: "facebook" },
       ]}
       buttons={[
         {
