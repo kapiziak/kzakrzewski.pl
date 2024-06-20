@@ -9,10 +9,20 @@ const EmojiSpinner: FC = () => {
 
   const handleMouseAction: React.MouseEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault();
-    setEmojis(availableEmojis[Math.floor(Math.random() * availableEmojis.length)])
+    setEmojis(
+      availableEmojis[Math.floor(Math.random() * availableEmojis.length)]
+    );
   };
 
-  return <div onMouseOver={handleMouseAction} onClick={handleMouseAction} style={{cursor: "pointer"}}>{emojis}</div>;
+  return (
+    <div
+      onMouseOver={handleMouseAction}
+      onClick={handleMouseAction}
+      style={{ cursor: "pointer", userSelect: "none" }}
+    >
+      {emojis}
+    </div>
+  );
 };
 
 export default EmojiSpinner;

@@ -1,20 +1,53 @@
-import {
-  VStack,
-} from "@chakra-ui/react";
-import React, { FC } from "react";
-import TimelineRow from "./TimelineRow";
+import { VStack } from "@chakra-ui/react";
+import { FC } from "react";
 import styles from "./Timeline.module.scss";
+import TimelineRow from "./TimelineRow";
 
-import imgVpet from "../../assets/img/vpet_mp2.png";
+import imgGTMs from "../../assets/img/gtms_mp3.png";
 import imgVpetPanel from "../../assets/img/panel_pet_1.png";
+import imgDiamond from "../../assets/img/staroscnieradosc.png";
+import imgSudo from "../../assets/img/sudo.webp";
+import imgTTS from "../../assets/img/ttsbanner.png";
+import imgVpet from "../../assets/img/vpet_mp2.png";
 import imgZs2 from "../../assets/img/zs2.png";
 import imgZs2Apk from "../../assets/img/zs2_apk_mp4.png";
-import imgGTMs from "../../assets/img/gtms_mp3.png";
-import imgDiamond from "../../assets/img/staroscnieradosc.png";
-import imgTTS from "../../assets/img/ttsbanner.png";
-
 const Timeline: FC = () => (
   <VStack gap={20} className={styles.timeline}>
+    <TimelineRow
+      title="Praca inżynierska - SUDO"
+      text={`Cyfrowy system zarządzania dostępem do kluczy, który zastępuje przestarzałe systemy papierowe, jak te używane na Politechnice Białostockiej. System automatyzuje procesy i redukuje dokumentację papierową. `}
+      image={imgSudo}
+      badges={[
+        { text: "Next.js", color: "blackAlpha" },
+        { text: "React.js", color: "facebook" },
+        { text: "TypeScript", color: "blue" },
+        { text: "Express.js", color: "red" },
+        { text: "Prisma ORM", color: "gray" },
+        { text: "Capacitor.js", color: "yellow" },
+        { text: "Electron", color: "cyan" },
+      ]}
+      buttons={[
+        {
+          text: "Kod źródłowy",
+          linkTo:
+            "https://drive.google.com/file/d/1Pe518WmllZDpWUYfSAUehGQ4cFdXn_oj/view?usp=sharing",
+          color: "blue",
+        },
+
+        {
+          text: "PDF",
+          linkTo:
+            "https://drive.google.com/file/d/1ss5Ea737R1cwJZNMZuOFCH4A6772KSFS/view?usp=sharing",
+          color: "orange",
+        },
+        {
+          text: "YouTube - Demo",
+          linkTo: "https://youtu.be/7O_7FQgM2Bs",
+          color: "red",
+        },
+      ]}
+      year={"2024"}
+    />
     <TimelineRow
       title="TimeToSave.eu"
       text={`Projekt został stworzony na potrzeby własne. Aplikacja pozwala na
@@ -39,6 +72,7 @@ const Timeline: FC = () => (
         },
       ]}
       year="2021"
+      inverted
     />
     <TimelineRow
       title="Projekt vPETRUCK"
@@ -52,7 +86,6 @@ const Timeline: FC = () => (
         { text: "Lua", color: "blue" },
         { text: "MySQL", color: "orange" },
       ]}
-      inverted
       year="2020"
     />
     <TimelineRow
@@ -73,6 +106,7 @@ const Timeline: FC = () => (
           color: "teal",
         },
       ]}
+      inverted
     />
     <TimelineRow
       title="ZS2 Suwałki"
@@ -86,12 +120,11 @@ const Timeline: FC = () => (
       ]}
       buttons={[
         {
-          linkTo: "https://zs2.suwalki.pl",
+          linkTo: "https://stage.zs2.suwalki.pl",
           text: "Witryna",
           color: "green",
         },
       ]}
-      inverted
       year="2017"
     />
     <TimelineRow
@@ -110,6 +143,7 @@ const Timeline: FC = () => (
           color: "gray",
         },
       ]}
+      inverted
     />
     <TimelineRow
       title="Panel radiowy GTMs"
@@ -127,7 +161,6 @@ const Timeline: FC = () => (
           color: "cyan",
         },
       ]}
-      inverted
     />
     <TimelineRow
       title="Projekt Diamond Truck"
@@ -148,6 +181,7 @@ const Timeline: FC = () => (
         },
       ]}
       year="2014"
+      inverted
     />
   </VStack>
 );
