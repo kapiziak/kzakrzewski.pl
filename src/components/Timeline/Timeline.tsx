@@ -30,7 +30,7 @@ const Timeline: FC = () => (
         {
           text: "Kod źródłowy",
           linkTo:
-            "https://drive.google.com/file/d/1Pe518WmllZDpWUYfSAUehGQ4cFdXn_oj/view?usp=sharing",
+            "https://drive.google.com/file/d/1GmT0kQV1CWP4hZahLtFEtgWQhvpcJm1X/view?usp=sharing",
           color: "blue",
         },
 
