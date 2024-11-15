@@ -40,7 +40,7 @@ const Home: FC = () => {
           mt={1}
           title={"+I will do everything you want :)"}
         >
-          Front-End<sup>+</sup> Developer do usług!
+          Full-stack Developer do usług!
         </Heading>
         <Text fontSize="6xl" mt={3}>
           <EmojiSpinner />
